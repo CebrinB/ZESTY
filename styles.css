@@ -1,5 +1,5 @@
 body {
-  padding-top: 10%;
+  padding-top: 75px;
   background-image: url("background.jpg");
   background-size: 45% 100%;
   background-repeat: no-repeat;
@@ -20,6 +20,16 @@ a:not(.navbar-brand, .nav-link) {
   padding-bottom: 120px;
   margin-bottom: 80px;
 }
+
+/*adds a soft box shadow*/
+.shadowleft {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+
+.shadowright {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
 
 .card-title {
   padding-left: 45px;
@@ -50,6 +60,22 @@ a:not(.navbar-brand, .nav-link) {
 .contact-card-right {
   padding-top: 20px;
   background-color: #fff;
+}
+
+.innerElement {
+  background-image: url("innerBackground.jpg");
+  background-size: 45% 100%;
+  background-repeat: no-repeat;
+}
+
+.innerElement-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa-lemon {
+  color: #bf8a6e;
 }
 
 .projectsTitle {
@@ -136,4 +162,8 @@ html {
 /*!IMPORTANT!Styling to get the footer to stay at the bottom of page*/
 .footer-margin {
   margin-top: 0px;
+}
+
+#footer-spacing {
+  margin: 20px;
 }
