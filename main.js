@@ -1,11 +1,11 @@
 
 //jQuery that retrieves the contents of the .txt file and loads into DOM object
 // $(function(){
-//   $( "#target" ).load("http://127.0.0.1:5500/text.json");
+//   $( "#target" ).load("../text.json");
 // });
 
 
-$.get("http://127.0.0.1:5500/text.json", function(data){
+$.get("../text.json", function(data){
   $( "body" ).data("personData", data);
 }, 'json');
 
