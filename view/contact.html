@@ -37,16 +37,48 @@
     <!-- Comments -->
     <div>
       <form action="example@example.com" method="post" enctype="text/plain" class="formContainer">
-        Name:<br>
-        <input type="text" name="name" placeholder="Your Name"><br>
-        E-mail:<br>
-        <input type="text" name="mail" placeholder="Your Email"><br>
+        
+          Name:<br>
+          <input type="text" name="name" placeholder="Your Name"><br>
+        
+        
+          E-mail:<br>
+          <input type="text" name="mail" placeholder="Your Email"><br>
+        
         Message:<br>
         <textarea cols="50" rows="5" placeholder="Your Message"></textarea><br><br>
         <input type="submit" value="Send">
         <input type="reset" value="Reset">
       </form>
     </div>
+    
+    <!-- mobile-friendly form
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3"></div> <!-- empty left column 
+        <div class="col-md-6 well" id="form">
+          <form method="post" action="login.php" class="form-signin">
+            <div class="form-group">
+              <label for="name" class="sr-only">Name:</label>
+              <input class="form-control" name="name" id="name" type="text" placeholder="Your Name" required autofocus>
+            </div>
+            <div class="form-group">
+              <label for="mail" class="sr-only">E-mail:</label>
+              <input class="form-control" name="mail" id="mail" type="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+              <label for="message" class="sr-only">Message:</label>
+              <textarea class="form-control" name="message" id="message" placeholder="Your Message" required></textarea>
+            </div>
+            <div class="text-center">
+              <button class="btn btn-md" type="submit">Send</button>
+              <button class="btn btn-md" type="reset">Reset</button>
+            </div>
+          </form>
+        </div> <!-- close center column 
+        <div class="col-md-3"></div> <!-- empty right column 
+      </div> <!-- close row 
+    </div> <!-- close container -->
     
     <!-- FOOTER -->
     <div class="footer-margin" id="footer-spacing"><pre>   </pre></div> <!-- close footer-margin -->

@@ -12,17 +12,30 @@
   "linkedin": "https://www.linkedin.com/in/cebrinbillings",
   "instagram": "#",
 
-  "section1": "Who I am",
-  "section2": "What I do",
-  "section3": "Skills",
-  "description1": "I'm a software engineer specialised in frontend and backend development for complex scalable web apps. I write about software development on my blog. Want to know how I may help your project? Check out my project portfolio and online resume.",
-  "description2": "super good at stuff",
-  "description3": "lots o skills",
-  "skill1": "Basket weaving",
-  "skill2": "Sewing",
-  "skill3": "Gardening",
-  "skill4": "Bagpipe playing",
-  "skill5": "Reading baby food labels",
-  "skill6": "Sleeping",
-  "skill7": "Building with blocks"
+  "section": [
+    {
+      "title": "Work History",
+      "text": "worked super hard at doing cool stuff and things"
+    }
+  ],
+  "picsection": [
+    {
+      "image": "personal.jpg",
+      "text": [
+        "short description of yourself",
+        "something else fun"
+      ]
+    }
+  ],
+  "listsection": [
+    {
+      "listtitle": "Skills",
+      "listitems": [
+        "skill1",
+        "skill2",
+        "skill3",
+        "skill4"
+      ]
+    }
+  ]  
 }

@@ -7,6 +7,10 @@ body {
   font-family: "Noto Sans JP", sans-serif;
 }
 
+body.about {
+  background-size: 35% 100%;
+}
+
 /*remove default styling from <a> tags, except in the navbar*/
 a:not(.navbar-brand, .nav-link) {
   color: inherit;
@@ -61,6 +65,7 @@ a:not(.navbar-brand, .nav-link) {
 }
 
 .innerElement {
+  padding: 15px;
 }
 
 .innerElement-left {
@@ -70,9 +75,22 @@ a:not(.navbar-brand, .nav-link) {
   background-color: #c1d7d9;
 }
 
+.innerElement-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*#resume-projects {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-left: 30%;
+  padding-right: 30%;
+}*/
+
 .fa-lemon {
   color: #fff546;
-  /*color: #E8DC00;*/
 }
 
 .flexProjects {
@@ -112,6 +130,13 @@ a:not(.navbar-brand, .nav-link) {
   padding-top: 30px;
   border-radius: 25px;
   margin-top: 50px;
+}
+
+#form {
+  margin-top: 50px;
+  background-color: #c1d7d9;
+  padding: 3em;
+  border-radius: 25px;
 }
 
 /*styling links in footer to space evenly*/
