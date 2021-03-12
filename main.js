@@ -75,6 +75,18 @@ function populateAbout() {
 
 function populateProjects() {
   //populate projects info
+  $("#project1Site").attr('href', $( "body" ).data( "personData" ).project1Site);
+  $("#project1Image").attr('src', $( "body" ).data( "personData" ).project1Image);
+  $("#project1Title").html($( "body" ).data( "personData" ).project1Title);
+  $("#project1Technologies").html($( "body" ).data( "personData" ).project1Technologies);
+  $("#project2Site").attr('href', $( "body" ).data( "personData" ).project1Site);
+  $("#project2Image").attr('src', $( "body" ).data( "personData" ).project1Image);
+  $("#project2Title").html($( "body" ).data( "personData" ).project1Title);
+  $("#project2Technologies").html($( "body" ).data( "personData" ).project1Technologies);
+  $("#project3Site").attr('href', $( "body" ).data( "personData" ).project1Site);
+  $("#project3Image").attr('src', $( "body" ).data( "personData" ).project1Image);
+  $("#project3Title").html($( "body" ).data( "personData" ).project1Title);
+  $("#project3Technologies").html($( "body" ).data( "personData" ).project1Technologies);
 
   //fill in the footer links
   $("#phone").attr('href', 'tel:' + ($( "body" ).data( "personData" ).phone));
@@ -96,6 +108,7 @@ function populateProjects() {
 
 function populateContact() {
   //populate contact info
+  $("#contactEmail").attr('action', $( "body" ).data( "personData" ).contactEmail);
 
   //fill in the footer links
   $("#phone").attr('href', 'tel:' + ($( "body" ).data( "personData" ).phone));

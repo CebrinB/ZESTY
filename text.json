@@ -37,5 +37,20 @@
         "skill4"
       ]
     }
-  ]  
+  ],  
+
+  "project1Site": "https://www.google.com",
+  "project1Image": "../images/app2.jpg",
+  "project1Title": "App 8",
+  "project1Technologies": "Java",
+  "project2Site": "https://www.google.com",
+  "project2Image": "../images/app2.jpg",
+  "project2Title": "App 8",
+  "project2Technologies": "Java",
+  "project3Site": "https://www.google.com",
+  "project3Image": "../images/app2.jpg",
+  "project3Title": "App 8",
+  "project3Technologies": "Java",
+
+  "contactEmail": "mailto:hello@hello.com"
 }
