@@ -75,6 +75,7 @@ function populateAbout() {
 
 function populateProjects() {
   //populate projects info
+  $("#brand").html($( "body" ).data( "personData" ).brand);
   $("#project1Site").attr('href', $( "body" ).data( "personData" ).project1Site);
   $("#project1Image").attr('src', $( "body" ).data( "personData" ).project1Image);
   $("#project1Title").html($( "body" ).data( "personData" ).project1Title);
@@ -108,6 +109,7 @@ function populateProjects() {
 
 function populateContact() {
   //populate contact info
+  $("#brand").html($( "body" ).data( "personData" ).brand);
   $("#contactEmail").attr('action', $( "body" ).data( "personData" ).contactEmail);
 
   //fill in the footer links
