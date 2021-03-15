@@ -127,7 +127,7 @@ a:not(.navbar-brand, .nav-link) {
 }
 
 #form {
-  margin-top: 50px;
+  margin-top: 45px;
   background-color: #c1d7d9;
   padding: 3em;
   border-radius: 20px;
@@ -162,5 +162,6 @@ html {
 }
 
 pre {
-  margin-bottom: 280px;
+  margin-bottom: 15px;
+  padding-top: 225px;
 }
