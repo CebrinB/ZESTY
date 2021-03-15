@@ -20,7 +20,7 @@ a:not(.navbar-brand, .nav-link) {
 /*styling for homepage contact card center element*/
 .contact-card {
   padding-top: 80px;
-  padding-bottom: 120px;
+  padding-bottom: 80px;
   margin-bottom: 80px;
   
 }
@@ -57,8 +57,10 @@ a:not(.navbar-brand, .nav-link) {
   background-color: #fff;
 }
 
+/*style the card elements on 'About' page*/
 .innerElement {
   padding: 15px;
+  margin-top: 15px;
 }
 
 .innerElement-left {
@@ -67,14 +69,32 @@ a:not(.navbar-brand, .nav-link) {
   align-items: center;
   background-color: #c1d7d9;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 13px;
+}
+
+.innerElement-left > h3 {
+  margin: 0;
 }
 
 .innerElement-right {
-  padding-top: 20px;
+  padding: 15px;
   background-color: #fff;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  display:flex;
+  flex-direction: column;
+  justify-content:space-around;
+  
 }
 
+.minicolumn {
+  padding-right: 0;
+}
+
+.innerColumn .row:last-child {
+  margin-bottom: 20px;
+}
+
+/*color the lemons yellow*/
 .fa-lemon {
   color: #fff546;
 }
@@ -110,7 +130,7 @@ a:not(.navbar-brand, .nav-link) {
   margin-top: 50px;
   background-color: #c1d7d9;
   padding: 3em;
-  border-radius: 22px;
+  border-radius: 20px;
 }
 
 /*styling links in footer to space evenly*/
@@ -121,24 +141,26 @@ a:not(.navbar-brand, .nav-link) {
   padding-right: 50px;
 }
 
+.footer-margin {
+  margin-top: 10px;
+}
+
 /*!IMPORTANT!Styling to get the footer to stay at the bottom of page*/
 .footer {
   background-color: #fff;
   position:absolute;
-  /*bottom: 0;*/
 }
 
-.contact-footer {
-  bottom: 0;
-}
-
-/*!IMPORTANT!Styling to get the footer to stay at the bottom of page*/
 html {
   position: relative;
   min-height: 100%;
 }
 
-/*!IMPORTANT!Styling to get the footer to stay at the bottom of page*/
-.footer-margin {
-  margin-top: 0px;
+/*!IMPORTANT!Styling to prevent footer from covering content on contact page*/
+.contact-footer {
+  bottom: 0;
+}
+
+pre {
+  margin-bottom: 280px;
 }
