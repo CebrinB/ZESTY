@@ -103,15 +103,30 @@ function populateProjects() {
 
 function populateContact() {
   //populate contact info
-  $("#contactEmail").attr('action', $( "body" ).data( "personData" ).contactEmail);
+  $("#contactEmail").attr('action', 'mailto:' + $( "body" ).data( "personData" ).email);
 }
 
 window.addEventListener("load", () => {
   if ($( "body" ).data( "personData" )) {
-    
-    //populateAbout();
-
-
+    let href = window.location.href.split('view/');
+    console.log(href[1]);
+    switch (href[1]) {
+      case 'index.html':
+        populateIndex();
+        break;
+      case 'about.html':
+        populateAbout();
+        break;
+      case 'projects.html':
+        populateProjects();
+        break;
+      case 'contact.html':
+        console.log('here');
+        populateContact();
+        break;
+      default:
+        break;
+    }
 
     //fill in the nav and footer links
     $("#brand").html($( "body" ).data( "personData" ).brand);
