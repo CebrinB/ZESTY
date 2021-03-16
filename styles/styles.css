@@ -57,6 +57,10 @@ a:not(.navbar-brand, .nav-link) {
   background-color: #fff;
 }
 
+.btn-ceb {
+  margin: .2rem;
+}
+
 /*style the card elements on 'About' page*/
 .innerElement {
   padding: 15px;
