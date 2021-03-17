@@ -53,52 +53,41 @@ function populateAbout() {
 function populateProjects() {
   //populate projects info
   $("#brand").html($( "body" ).data( "personData" ).brand);
+/*
+  let projectsArray = document.querySelectorAll('.project');
+  var data = $( "body" ).data( "personData" ).projects;
+  let i = 0;
+  console.log(data[0][0]);
+  for(let i = 0; i<9; i++){
+    projectsArray[i].innerHTML = '<a href="'+ data[i][0] + '">' +
+      '<div class="card">' +
+        '<img src="'+ data[i][1] +'" style="width:350px; height:200px">' +
+        '<div class="container">' +
+          '<h4><b>'+ data[i][2] +'</b></h4>' +
+          '<p>'+ data[i][3] +'</p>' +
+        '</div>' +
+      '</div>' +
+    '</a>';
+    }
+*/
 
-  $("#project1Site").attr('href', $( "body" ).data( "personData" ).project1Site);
-  $("#project1Image").attr('src', $( "body" ).data( "personData" ).project1Image);
-  $("#project1Title").html($( "body" ).data( "personData" ).project1Title);
-  $("#project1Technologies").html($( "body" ).data( "personData" ).project1Technologies);
-
-  $("#project2Site").attr('href', $( "body" ).data( "personData" ).project2Site);
-  $("#project2Image").attr('src', $( "body" ).data( "personData" ).project2Image);
-  $("#project2Title").html($( "body" ).data( "personData" ).project2Title);
-  $("#project2Technologies").html($( "body" ).data( "personData" ).project2Technologies);
-
-  $("#project3Site").attr('href', $( "body" ).data( "personData" ).project3Site);
-  $("#project3Image").attr('src', $( "body" ).data( "personData" ).project3Image);
-  $("#project3Title").html($( "body" ).data( "personData" ).project3Title);
-  $("#project3Technologies").html($( "body" ).data( "personData" ).project3Technologies);
-
-  $("#project4Site").attr('href', $( "body" ).data( "personData" ).project4Site);
-  $("#project4Image").attr('src', $( "body" ).data( "personData" ).project4Image);
-  $("#project4Title").html($( "body" ).data( "personData" ).project4Title);
-  $("#project4Technologies").html($( "body" ).data( "personData" ).project4Technologies);
-
-  $("#project5Site").attr('href', $( "body" ).data( "personData" ).project5Site);
-  $("#project5Image").attr('src', $( "body" ).data( "personData" ).project5Image);
-  $("#project5Title").html($( "body" ).data( "personData" ).project5Title);
-  $("#project5Technologies").html($( "body" ).data( "personData" ).project5Technologies);
-
-  $("#project6Site").attr('href', $( "body" ).data( "personData" ).project6Site);
-  $("#project6Image").attr('src', $( "body" ).data( "personData" ).project6Image);
-  $("#project6Title").html($( "body" ).data( "personData" ).project6Title);
-  $("#project6Technologies").html($( "body" ).data( "personData" ).project6Technologies);
-
-  $("#project7Site").attr('href', $( "body" ).data( "personData" ).project7Site);
-  $("#project7Image").attr('src', $( "body" ).data( "personData" ).project7Image);
-  $("#project7Title").html($( "body" ).data( "personData" ).project7Title);
-  $("#project7Technologies").html($( "body" ).data( "personData" ).project7Technologies);
-
-  $("#project8Site").attr('href', $( "body" ).data( "personData" ).project8Site);
-  $("#project8Image").attr('src', $( "body" ).data( "personData" ).project8Image);
-  $("#project8Title").html($( "body" ).data( "personData" ).project8Title);
-  $("#project8Technologies").html($( "body" ).data( "personData" ).project8Technologies);
-
-  $("#project9Site").attr('href', $( "body" ).data( "personData" ).project9Site);
-  $("#project9Image").attr('src', $( "body" ).data( "personData" ).project9Image);
-  $("#project9Title").html($( "body" ).data( "personData" ).project9Title);
-  $("#project9Technologies").html($( "body" ).data( "personData" ).project9Technologies);
-  
+let divProjects = document.querySelectorAll('.project');
+  index = 0;
+  $( "body" ).data( "personData" ).projects.forEach(
+    (project) => {
+      divProjects[index].innerHTML =
+      '<a href="'+ project[0] + '">' +
+        '<div class="card">' +
+          '<img src="'+ project[1] +'" style="width:350px; height:200px">' +
+          '<div class="container">' +
+            '<h4><b>'+ project[2] +'</b></h4>' +
+            '<p>'+ project[3] +'</p>' +
+          '</div>' +
+        '</div>' +
+      '</a>';
+      index++;
+    }
+  );
 }
 
 function populateContact() {
