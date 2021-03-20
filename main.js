@@ -52,7 +52,7 @@ function populateAbout() {
 
 function populateProjects() {
   //populate projects info
-let divProjects = document.querySelectorAll('.project');
+  let divProjects = document.querySelectorAll('.project');
   let index = 0;
   $( "body" ).data( "personData" ).projects.forEach(
     (project) => {
