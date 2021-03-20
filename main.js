@@ -52,25 +52,6 @@ function populateAbout() {
 
 function populateProjects() {
   //populate projects info
-
-/*
-  let projectsArray = document.querySelectorAll('.project');
-  var data = $( "body" ).data( "personData" ).projects;
-  let i = 0;
-  console.log(data[0][0]);
-  for(let i = 0; i<9; i++){
-    projectsArray[i].innerHTML = '<a href="'+ data[i][0] + '">' +
-      '<div class="card">' +
-        '<img src="'+ data[i][1] +'" style="width:350px; height:200px">' +
-        '<div class="container">' +
-          '<h4><b>'+ data[i][2] +'</b></h4>' +
-          '<p>'+ data[i][3] +'</p>' +
-        '</div>' +
-      '</div>' +
-    '</a>';
-    }
-*/
-
 let divProjects = document.querySelectorAll('.project');
   index = 0;
   $( "body" ).data( "personData" ).projects.forEach(
@@ -98,7 +79,6 @@ function populateContact() {
 window.addEventListener("load", () => {
   if ($( "body" ).data( "personData" )) {
     let href = window.location.href.split('view/');
-    console.log(href[1]);
     switch (href[1]) {
       case 'index.html':
         populateIndex();
