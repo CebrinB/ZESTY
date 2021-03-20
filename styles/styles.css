@@ -153,16 +153,12 @@ a:not(.navbar-brand, .nav-link) {
 .footer {
   background-color: #fff;
   position:absolute;
+  bottom: 0;
 }
 
 html {
   position: relative;
   min-height: 100%;
-}
-
-/*!IMPORTANT!Styling to prevent footer from covering content on contact page*/
-.contact-footer {
-  bottom: 0;
 }
 
 pre {
