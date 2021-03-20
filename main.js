@@ -52,7 +52,7 @@ function populateAbout() {
 
 function populateProjects() {
   //populate projects info
-  $("#brand").html($( "body" ).data( "personData" ).brand);
+
 /*
   let projectsArray = document.querySelectorAll('.project');
   var data = $( "body" ).data( "personData" ).projects;
@@ -78,7 +78,7 @@ let divProjects = document.querySelectorAll('.project');
       divProjects[index].innerHTML =
       '<a href="'+ project[0] + '">' +
         '<div class="card">' +
-          '<img src="'+ project[1] +'" style="width:350px; height:200px">' +
+          '<img src="'+ project[1] +'" style="width:350px; height:200px;">' +
           '<div class="container">' +
             '<h4><b>'+ project[2] +'</b></h4>' +
             '<p>'+ project[3] +'</p>' +
@@ -110,7 +110,6 @@ window.addEventListener("load", () => {
         populateProjects();
         break;
       case 'contact.html':
-        console.log('here');
         populateContact();
         break;
       default:

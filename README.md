@@ -12,6 +12,7 @@ To download a copy of the template
 4. Open Windows Explorer and go to your Downloads folder
 5. Right click on the zipped "ZESTY-main" folder, then click on "Extract All"
 6. A dialog box will pop up. Use it to navigate to the location you want to save this folder
+***By default, the files will be extracted to a nested ZESTY-main folder inside of another ZESTY
 
 To insert your images and documents
 1. Copy+Paste a professional headshot into the Images folder. Be certain this file is named "headshot.jpg"
